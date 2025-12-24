@@ -10,12 +10,15 @@ const pizza = () => {
 };
 
 const App = () => {
-  return React.createElement(
-    "div",
-    {},
+  return React.createElement("div", {}, [
     React.createElement("h1", {}, "Welcome to Padre Gino's!"),
-    React.createElement("p", {}, "The best Italian food in town.")
-  );
+    React.createElement("p", {}, "The best Italian food in town."),
+    React.createElement(pizza),
+    React.createElement(pizza),
+    React.createElement(pizza),
+    React.createElement(pizza),
+    React.createElement(pizza),
+  ]);
 };
 
 const container = document.getElementById("root");
