@@ -1,3 +1,14 @@
+const pizza = () => {
+  return React.createElement("div", {}, [
+    React.createElement("h1", {}, "The Best Pizza in Town"),
+    React.createElement(
+      "p",
+      {},
+      "Come and try our delicious pizzas made with fresh ingredients."
+    ),
+  ]);
+};
+
 const App = () => {
   return React.createElement(
     "div",
