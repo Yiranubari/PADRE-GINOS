@@ -52,6 +52,14 @@ export default function Order() {
             </div>
           </div>
           <button type="submit">Add to Cart</button>
+          <div className="order-pizza">
+            <Pizza
+              name="Pepperoni"
+              description="pep, cheese, n stuff"
+              image={"/public/pizzas/pepperoni.webp"}
+            />
+            <p>$13.37</p>
+          </div>
         </div>
       </form>
     </div>
