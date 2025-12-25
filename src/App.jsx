@@ -1,5 +1,5 @@
-import { createRoot } from "react-dom/client";
-import pizza from "/Pizza";
+import { createRoot } from "react-dom";
+import Pizza from "../Pizza";
 const App = () => {
   return (
     <div>
