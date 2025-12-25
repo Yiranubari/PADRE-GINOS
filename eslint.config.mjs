@@ -15,6 +15,7 @@ export default [
       },
     },
   },
+  reactPlugin.configs.flat["jsx-runtime"],
   {
     files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
