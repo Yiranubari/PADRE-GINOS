@@ -1,9 +1,8 @@
 import { createRoot } from "react-dom/client";
-
+import pizza from "/Pizza";
 const App = () => {
   return (
     <div>
-      {/* <x-my-webcomponent></x-my-webcomponent> */}
       <h1>Padre Gino's - Order Now</h1>
       <Pizza name="Pepperoni" description="pep, cheese, n stuff" />
       <Pizza name="Hawaiian" description="ham, pineapple, n stuff" />
