@@ -3,6 +3,7 @@ import globals from "globals";
 import prettier from "eslint-config-prettier";
 import reactPlugin from "eslint-plugin-react";
 import { version } from "react";
+import { rules } from "@eslint/js/src/configs/eslint-all";
 
 /** @type {import ('eslint').Linter.Config[]} */
 export default [
@@ -25,6 +26,11 @@ export default [
           jsx: true,
         },
       },
+    },
+    rules: {
+      // Custom rules
+      "react/no-unescaped-entities": "off",
+      "react/prop-types": "off",
     },
   },
   prettier,
