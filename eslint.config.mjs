@@ -1,6 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
 import prettier from "eslint-config-prettier";
+import { jsx } from "react/jsx-runtime";
 
 /** @type {import ('eslint').Linter.Config[]} */
 export default [
@@ -9,6 +10,11 @@ export default [
     files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
       globals: { ...globals.browser, ...globals.node },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
   },
   prettier,
