@@ -7,6 +7,9 @@ export default [
   js.configs.recommended,
   {
     files: ["**/*.js", "**/*.jsx"],
+    languageOptions: {
+      globals: { ...globals.browser, ...globals.node },
+    },
   },
   prettier,
 ];
